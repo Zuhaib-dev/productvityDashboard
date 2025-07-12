@@ -1,60 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Productivty Dashboard</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <div id="main">
-        
-        <section class="allEllems">
-            <div class="todo elem" id="0">
-                <img src="https://images.unsplash.com/photo-1706696951106-b400c3808043?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Njh8fDNkJTIwaW1hZ2VzfGVufDB8fDB8fHww" alt="">
-                <h2>Todo List</h2>
+      <section class="allEllems">
+        <div class="todo elem" id="0">
+          <img
+            src="https://images.unsplash.com/photo-1706696951106-b400c3808043?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Njh8fDNkJTIwaW1hZ2VzfGVufDB8fDB8fHww"
+            alt=""
+          />
+          <h2>Todo List</h2>
+        </div>
+        <div class="daily elem" id="1">
+          <img
+            src="https://images.unsplash.com/photo-1706696951051-51ff81883b61?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NjN8fDNkJTIwaW1hZ2VzfGVufDB8fDB8fHww"
+            alt=""
+          />
+          <h2>Daily Planner</h2>
+        </div>
+        <div class="moti elem" id="2">
+          <img
+            src="https://images.unsplash.com/photo-1706696950760-4ee1d997bb51?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTR8fDNkJTIwaW1hZ2VzfGVufDB8fDB8fHww"
+            alt=""
+          />
+          <h2>Motivaition</h2>
+        </div>
+        <div class="pomo elem" id="3">
+          <img
+            src="https://images.unsplash.com/photo-1706696951898-5052cb7c569e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NjZ8fDNkJTIwaW1hZ2VzfGVufDB8fDB8fHww"
+            alt=""
+          />
+          <h2>Pomodoro Technique</h2>
+        </div>
+        <div class="goals elem" id="4">
+          <img
+            src="https://images.unsplash.com/photo-1706694668136-ce3eac60643f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjZ8fDNkJTIwaW1hZ2VzfGVufDB8fDB8fHww"
+            alt=""
+          />
+          <h2>Daily goals</h2>
+        </div>
+        <div class="islamic elem" id="5">
+          <img
+            src="https://images.unsplash.com/photo-1723624483848-fd0976bb5289?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fDNkJTIwaXNsYW1pYyUyMGltYWdlc3xlbnwwfHwwfHx8MA%3D%3D"
+            alt=""
+          />
+          <h2>Islamic</h2>
+        </div>
+      </section>
+      <section class="fullElem todo-list-fullpage">
+        <button class="back" id="0">close</button>
+        <h2>Your personlized Tasklist List📍</h2>
+        <div class="todo-container">
+          <div class="addTask">
+            <form>
+              <input type="text" placeholder="Enter Task" required />
+              <textarea placeholder="Enter Details" required></textarea>
+              <button>Add Task</button>
+            </form>
+          </div>
+          <div class="allTask">
+            <div class="task">
+              <h5>Gym jao</h5>
+              <button>Mark as completed</button>
             </div>
-            <div class="daily elem" id="1">
-                <img src="https://images.unsplash.com/photo-1706696951051-51ff81883b61?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NjN8fDNkJTIwaW1hZ2VzfGVufDB8fDB8fHww" alt="">
-                <h2>Daily Planner</h2>
-            </div>
-            <div class="moti elem" id="2">
-                <img src="https://images.unsplash.com/photo-1706696950760-4ee1d997bb51?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTR8fDNkJTIwaW1hZ2VzfGVufDB8fDB8fHww" alt="">
-                <h2>Motivaition</h2> 
-            </div>
-            <div class="pomo elem" id="3">
-                <img src="https://images.unsplash.com/photo-1706696951898-5052cb7c569e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NjZ8fDNkJTIwaW1hZ2VzfGVufDB8fDB8fHww" alt="">
-                <h2>Pomodoro Technique</h2>
-            </div>
-            <div class="goals elem" id="4">
-                <img src="https://images.unsplash.com/photo-1706694668136-ce3eac60643f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjZ8fDNkJTIwaW1hZ2VzfGVufDB8fDB8fHww" alt="">
-                <h2>Daily goals</h2>
-            </div>
-            <div class="islamic elem" id="5">
-                <img src="https://images.unsplash.com/photo-1723624483848-fd0976bb5289?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fDNkJTIwaXNsYW1pYyUyMGltYWdlc3xlbnwwfHwwfHx8MA%3D%3D" alt="">
-                <h2>Islamic </h2>
-            </div>
-
-        </section>
-        <section class="fullElem">
-            <h1>To do List</h1>
-        </section>
-        <section class="fullElem">
-            <h1>Daily Planner</h1>
-        </section>
-        <section class="fullElem">
-            <h1>Motivaition</h1>
-        </section>
-        <section class="fullElem">
-            <h1>Pomodoro Timer</h1>
-        </section>
-        <section class="fullElem">
-            <h1>Daily goals</h1>
-        </section>
-        <section class="fullElem">
-            <h1>Islamic</h1>
-        </section>
+          </div>
+        </div>
+      </section>
+      <section class="fullElem daily-planner-fullpage">
+        <button class="back" id="1">close</button>
+        <h1>Daily Planner</h1>
+      </section>
+      <section class="fullElem motivaitional-fullpage">
+        <button class="back" id="2">close</button>
+        <h1>Motivaition</h1>
+      </section>
+      <section class="fullElem pomodoro-fullpage">
+        <button class="back" id="3">close</button>
+        <h1>Pomodoro Timer</h1>
+      </section>
+      <section class="fullElem daily-goals-fullpage">
+        <button class="back" id="4">close</button>
+        <h1>Daily goals</h1>
+      </section>
+      <section class="fullElem islamic-fullpage">
+        <button class="back" id="5">close</button>
+        <h1>Islamic</h1>
+      </section>
     </div>
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
