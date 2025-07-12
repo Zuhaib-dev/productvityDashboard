@@ -16,23 +16,14 @@ function openFeatures() {
 }
 // openFeatures();
 
-let currentTask = [
-  {
-    task: "Task 1",
-    details: "Details 1",
-    important: true,
-  },
-  {
-    task: "Task 2",
-    details: "Details 2",
-    important: true,
-  },
-  {
-    task: "Task 3",
-    details: "Details 3",
-    important: false,
-  },
-];
+var currentTask = [];
+
+if (localStorage.getItem("currentTask")) {
+  console.log("Task List is Full");
+}else{
+    console.log("Taski List is Empty");
+    
+}
 
 function renderTask() {
   let allTask = document.querySelector(".allTask");
@@ -57,6 +48,7 @@ form.addEventListener("submit", function (e) {
     details: taskDetailsInput.value,
     important: taskCheckbox.checked,
   });
+  localStorage.setItem("currentTask", JSON.stringify(currentTask));
   taskInput.value = "";
   taskDetailsInput = "";
   taskCheckbox.checked = false;
