@@ -103,10 +103,6 @@ section.allEllems {
 .back:active {
   scale: 0.98;
 }
-
-.todo-list-fullpage {
-  display: block;
-}
 .todo-list-fullpage h2 {
   font-size: 50px;
 }
