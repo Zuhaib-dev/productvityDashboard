@@ -49,6 +49,7 @@ section.allEllems{
     flex-wrap:wrap ;
     align-items: flex-start;
     gap: 40px;
+    position: absolute;
 
 
 }
@@ -83,4 +84,5 @@ section.allEllems{
     padding: 40px;
     font-size: 60px;
     display: none;
+    position: absolute;
 }
